@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid-container > div {
+  padding: 50px;
+}
+
+#formDiv {
+  text-align: right;
+}

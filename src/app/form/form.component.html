@@ -1,0 +1,13 @@
+<form>
+  <label>Base:</label>
+  <select [(ngModel)]="selectedBaseCurrency" name="baseCurrencySelect">
+    <option *ngFor="let currency of baseCurrencies" [value]="currency">{{currency}}</option>
+  </select>
+  <br><br>
+
+  <label>Date:</label>
+  <input type="date" [(ngModel)]="selectedDate" name="dateSelect" value="10/10/2018">
+  <br><br>
+
+  <button type="button" (click)="onDisplay()">Display</button>
+</form>

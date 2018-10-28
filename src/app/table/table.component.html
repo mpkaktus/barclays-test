@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <th (click)="sortCurrencies()">Currency</th>
+    <th>Buy</th>
+    <th>Sell</th>
+  </tr>
+
+  <tr *ngFor="let rate of rates" [class.red-font]="isBaseCurrency(rate[0])">
+    <td>{{rate[0]}}</td>
+    <td>{{rate[1]*0.95 | number: '1.4-4'}}</td>
+    <td>{{rate[1]*1.05 | number: '1.4-4'}}</td>
+  </tr>
+</table>
